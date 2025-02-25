@@ -156,7 +156,7 @@ img {
     }
 
         #daniel-clifford {
-        background-image: url("/images/bg-pattern-quotation.svg");
+        background-image: url("images/bg-pattern-quotation.svg");
         background-repeat: no-repeat;
         background-position: top right 30%;
         background-size: auto;
@@ -173,7 +173,7 @@ img {
     }
 
     #daniel-clifford {
-        background-image: url("/images/bg-pattern-quotation.svg");
+        background-image: url("images/bg-pattern-quotation.svg");
         background-repeat: no-repeat;
         background-position: top right 12%;
         background-size: auto;
