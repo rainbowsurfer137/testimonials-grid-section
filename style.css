@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Global Styling */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
+
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --black: hsl(0, 0%, 7%);
+
+    --spacing-400: 2rem;
+    --spacing-200: 1rem;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", serif;
+    font-size: 0.8125rem;
+    background-color: #F6F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Typography */
+
+.author-name {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    line-height: 110%;
+    padding-bottom: .125em;
+}
+
+.subheading {
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.highlight {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 120%;
+    padding-bottom: var(--spacing-200);
+}
+
+.quote {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height:  140%;
+}
+
+/* Testimonial Section */
+
+.testimonial-section {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    
+    gap: var(--spacing-400);
+    padding: var(--spacing-400);
+    width: min(95%, 73rem);
+}
+
+/* Card Styling */
+
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 40px 60px 60px -30px rgba(72, 85, 106, 0.5);
+    padding: var(--spacing-400);
+}
+
+img {
+    border-radius: 50%;
+    max-width: 1.75rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: var(--spacing-200);
+  }
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#daniel-clifford {
+    background-color: var(--purple-500);
+    color: var(--white);
+    grid-area: one;
+}
+
+#daniel-clifford img {
+    border: 2px solid var(--purple-300);
+}
+
+#jonathan-walters {
+    background-color: var(--grey-500);
+    color: var(--white);
+    grid-area: two;
+}
+
+#jeanette-harmon {
+    background-color: var(--white);
+    color: var(--grey-500);
+    grid-area: three;
+}
+
+#patrick-abrams {
+    background-color: var(--dark-blue);
+    color: var(--grey-200);
+    grid-area: four;
+}
+
+#patrick-abrams img {
+    border: 2px solid var(--purple-500);
+}
+
+#kira-whittle {
+    background-color: var(--white);
+    color: var(--grey-400);
+    grid-area: five;
+}
+
+/* Media Quirries */
+
+@media (min-width: 37.5rem) {
+    .testimonial-section {
+        display: grid;
+        grid-template-areas: 
+        'one one'
+        'two three'
+        'four four'
+        'five five';
+    }
+
+        #daniel-clifford {
+        background-image: url("/images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top right 30%;
+        background-size: auto;
+    }
+
+}
+
+@media (min-width: 56rem) {
+    .testimonial-section {
+        display: grid;
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'
+    }
+
+    #daniel-clifford {
+        background-image: url("/images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top right 12%;
+        background-size: auto;
+    }
+
+}
