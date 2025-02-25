@@ -26,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/Screenshot.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Ahttps://rainbowsurfer137.github.io/testimonials-grid-section/](https://rainbowsurfer137.github.io/testimonials-grid-section/)
 
 ## My process
 
